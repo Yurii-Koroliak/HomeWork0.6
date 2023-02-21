@@ -6,6 +6,18 @@
     transition: all .1s ease-in;
 }
 
+:root {
+    --c-purple: #7752BE;
+    --c-light-orange: #FAB005;
+    --c-red: #F03E3D;
+    --c-blue: #4DADF7;
+    --c-orange: #FF9900;
+    --c-brown: #2F281E;
+    --c-light-brown: #544837;
+    --c-almost-white:#BCD0E5;
+    --c-light-pink: #FFE5D2;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -47,7 +59,7 @@ div>.menu {
 li>a {
     font-weight: 400;
     font-size: 16px;
-    color: #2F281E;
+    color: var(--c-brown);
     text-decoration: none;
 }
 
@@ -61,10 +73,10 @@ li>a {
 
 .menu>a:first-child {
     padding: 13px 25px;
-    border: 1px solid #BCD0E5;
+    border: 1px solid var(--c-almost-white);
     border-radius: 4px;
     text-decoration: none;
-    color: #2F281E;
+    color: var(--c-brown);
     background-color: white;
     margin-right: 32px;
     font-weight: 600;
@@ -73,7 +85,7 @@ li>a {
 
 .menu>a:last-child {
     padding: 13px 25px;
-    background-color: #FF9900;
+    background-color: var(--c-orange);
     border-radius: 4px;
     color: white;
     text-decoration: none;
@@ -84,7 +96,7 @@ li>a {
 h1 {
     font-weight: 700;
     font-size: 44px;
-    color: #2F281E;
+    color: var(--c-brown);
     padding-bottom: 30px;
 }
 
@@ -97,7 +109,7 @@ h2 {
 div>.text {
     font-weight: 400;
     font-size: 18px;
-    color:#544837;
+    color:var(--c-light-brown);
     line-height: 28px;
 }
 
@@ -109,7 +121,7 @@ div>.text {
 
 .thinking>a {
     padding: 13px 40px;
-    background-color: #FF9900;
+    background-color: var(--c-orange);
     border-radius: 4px;
     color: white;
     text-decoration: none;
@@ -129,7 +141,7 @@ div>.image {
 .headline {
     font-weight: 600;
     font-size: 22px;
-    color: #2F281E;
+    color:var(--c-brown);
     padding-top: 30px;
     padding-bottom: 16px;
 }
@@ -137,7 +149,7 @@ div>.image {
 .item {
     font-weight: 500;
     font-size: 16px;
-    color: #544837;
+    color: var(--c-light-brown);
 }
 
 .tools {
@@ -157,7 +169,7 @@ div>.image {
 
 .button>a {
     padding: 13px 40px;
-    background-color: #FF9900;
+    background-color: var(--c-orange);
     border-radius: 4px;
     color: white;
     text-decoration: none;
@@ -167,9 +179,9 @@ div>.image {
 
 a:hover {
     padding: 13px 40px;
-    background-color: #FFE5D2;
+    background-color: var(--c-light-pink);
     border-radius: 4px;
-    color:#FF9900;
+    color:var(--c-orange);
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
@@ -178,11 +190,11 @@ a:hover {
 
 .menu>a:first-child:hover {
     padding: 13px 25px;
-    border: 1px solid #BCD0E5;
+    border: 1px solid var(--c-almost-white);
     border-radius: 4px;
     text-decoration: none;
-    color:#FF9900;
-    background-color: #FFE5D2;
+    color: var(--c-orange);
+    background-color:var(--c-light-pink);
     margin-right: 32px;
     font-weight: 600;
     font-size: 16px;
@@ -190,9 +202,9 @@ a:hover {
 
 .menu>a:last-child:hover {
     padding: 13px 25px;
-    background-color: #FFE5D2;
+    background-color: var(--c-light-pink);
     border-radius: 4px;
-    color:#FF9900;
+    color: var(--c-orange);
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
@@ -208,7 +220,7 @@ li {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-    color:#2F281E;
+    color:var(--c-brown);
 }
 
 .container__menu__item {
@@ -216,7 +228,7 @@ li {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    color: #544837;
+    color: var(--c-light-brown);
 }
 
 .container__menu__item:last-child {
@@ -224,7 +236,7 @@ li {
 }
 
 .input {
-    border: 1px solid #BCD0E5;
+    border: 1px solid var(--c-almost-white);
     border-radius: 4px;
     padding: 15px 118px 15px 10px;
     width: 310px;
@@ -243,7 +255,7 @@ form {
 
 .btn {
     padding: 13px 40px;
-    background-color: #FF9900;
+    background-color: var(--c-orange);
     border-radius: 4px;
     color: white;
     text-decoration: none;
@@ -251,13 +263,14 @@ form {
     font-size: 16px;
     line-height: 24px;
     border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
     padding: 13px 40px;
-    background-color: #FFE5D2;
+    background-color: var(--c-light-pink);
     border-radius: 4px;
-    color:#FF9900;
+    color: var(--c-orange);
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
@@ -265,4 +278,29 @@ form {
 
 .input:focus {
     transform: translateX(15px);
+}
+
+.--bg-blue {
+    background-color: var(--c-blue);
+}
+
+.--bg-red {
+    background-color: var(--c-red);
+}
+
+.--bg-light-orange {
+    background-color: var(--c-light-orange);
+}
+
+.--bg-purple {
+    background-color: var(--c-purple);
+}
+
+.superpowers-image {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
